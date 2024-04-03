@@ -1,0 +1,1278 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://purl.org/turbbo/RBBO_behaviour_properties.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://purl.org/turbbo/RBBO_behaviour_properties.owl">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>RBBO - Behaviour properties
+
+This module of RBBO consists of classes and data properties which describe the characteristics of behaviours.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>2023-07-17</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000003"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000006"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000012"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000013"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000014"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000015"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000016"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000017"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000018"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000019"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000020"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000021"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000105"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000107"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000110"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000112"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000120"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000121"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000124"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000125"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000126"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000136"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000137"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000138"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000143"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000144"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000145"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000146"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000148"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000302"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000085"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000086"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000089"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000092"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000094"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000096"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000097"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000098"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000099"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000103"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000108"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000111"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000117"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000118"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000119"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000128"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000129"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000130"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://purl.org/turbbo/RBBO_0000001"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://purl.org/turbbo/RBBO_0000002"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://purl.org/turbbo/RBBO_0000004"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://purl.org/turbbo/RBBO_0000005"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://purl.org/turbbo/RBBO_0000007"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://purl.org/turbbo/RBBO_0000008"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://purl.org/turbbo/RBBO_0000009"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://purl.org/turbbo/RBBO_0000010"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://purl.org/turbbo/RBBO_0000011"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://purl.org/turbbo/RBBO_0000301"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://purl.org/turbbo/RBBO_0000303"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://purl.org/turbbo/RBBO_0000304"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://purl.org/turbbo/RBBO_0000305"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://purl.org/turbbo/RBBO_0000306"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://purl.org/turbbo/RBBO_0000307"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://purl.org/turbbo/RBBO_0000308"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://purl.org/turbbo/RBBO_0000309"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://purl.org/turbbo/RBBO_0000310"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://purl.org/turbbo/RBBO_0000311"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://purl.org/turbbo/RBBO_0000312"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://purl.org/turbbo/RBBO_0000313"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://purl.org/turbbo/RBBO_0000314"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://purl.org/turbbo/RBBO_0000315"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="https://purl.org/turbbo/RBBO_0000150"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000003"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000144"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000012"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000018"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000013"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000144"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000014"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000124"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000015"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000144"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000016"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000125"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000017"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000125"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000019"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000020"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000021"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000105"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000124"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000110"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000124"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000121"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000144"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000126"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000144"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000136"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000124"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000137"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000136"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000138"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000124"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000143"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000112"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000145"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000144"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000146"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000144"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000148"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000018"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000302"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000138"/>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000103"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000124"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000111"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000112"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000111"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000125"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000111"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000143"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000130"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000110"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000092"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000107"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000094"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000143"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000096"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000105"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000097"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000112"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000098"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000110"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000099"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000121"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000103"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000144"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000108"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000126"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000117"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000124"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000119"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000125"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000128"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000148"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000129"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000120"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://purl.org/turbbo/RBBO_0000130"/>
+        <Class IRI="https://purl.org/turbbo/RBBO_0000105"/>
+    </ObjectPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://purl.org/turbbo/RBBO_0000001"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://purl.org/turbbo/RBBO_0000002"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://purl.org/turbbo/RBBO_0000004"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://purl.org/turbbo/RBBO_0000005"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://purl.org/turbbo/RBBO_0000007"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://purl.org/turbbo/RBBO_0000008"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://purl.org/turbbo/RBBO_0000009"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://purl.org/turbbo/RBBO_0000010"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://purl.org/turbbo/RBBO_0000011"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000001</IRI>
+        <Literal>&quot;https://link.springer.com/chapter/10.1007/978-3-030-54994-7_32
+Deliberate behaviour is driven by a goal, which not only depends on the knowledge domain but also on a representation of the goal achievement. This representation may be given by a combination of perceptions, actions and cognitive information.&quot; (Harriet Baird 4th April 2023)
+
+This paper might be useful: https://bpspsychub.onlinelibrary.wiley.com/doi/full/10.1348/014466606X152261
+&quot;It was theorised that deliberate behaviour is distinguished from spontaneous behaviour with respect to the amount of cognitive effort used in making the decision to carry out the particular behaviour&quot; ((Harriet Baird 4th April 2023)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000001</IRI>
+        <Literal>Is this the same as &quot;is intentional&quot;? I was tempted to define &quot;is deliberate&quot; as intentional behaviour.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000001</IRI>
+        <Literal>is deliberate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000001</IRI>
+        <Literal>Deliberate behaviour is driven by a goal, which not only depends on the knowledge domain but also on a representation of the goal achievement. (from https://link.springer.com/chapter/10.1007/978-3-030-54994-7_32)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000002</IRI>
+        <Literal>is changeable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000002</IRI>
+        <Literal>Behaviour that is liable to variation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000003</IRI>
+        <Literal>ThomasW</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000003</IRI>
+        <Literal>2023-10-30T13:46:29.117726Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000003</IRI>
+        <Literal xml:lang="en">Habitual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000003</IRI>
+        <Literal>A behaviour that results from a learnt stimulus-behaviour co-occurrence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000004</IRI>
+        <Literal>&quot;There are other ontologies that use differen definitions - e.g., A pattern of repeat behavior requiring little conscious thought - NCIT &amp; GSSO An acquired pattern of behavior that often occurs automatically and is reliably triggered by some event or stimulus. - COGAT&quot; (Harriet Baird 4th April 2023)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000004</IRI>
+        <Literal>is habitual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000004</IRI>
+        <Literal>A behaviour that results from a learnt stimulus-behaviour co-occurrence (Source: definition imported from the Behaviour Change Intervention Ontology (BCIO), via Qeios.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000005</IRI>
+        <Literal>is heterogenous</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000005</IRI>
+        <Literal>The behaviour has a &quot;uniform consistency or composition&quot; (Source: National Cancer Institute Thesaurus via Bioportal)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000006</IRI>
+        <Literal>ThomasW</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000006</IRI>
+        <Literal>2023-10-30T14:24:49.070593Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000006</IRI>
+        <Literal xml:lang="en">Correlates with</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000007</IRI>
+        <Literal>is legal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000007</IRI>
+        <Literal>The behaviour meets the requirements under law; is not in violation of law or anything related to the law. (Source: National Cancer Institute. Legal. NCI Thesaurus. Code C54074, via Qeios)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000008</IRI>
+        <Literal>is moral</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000008</IRI>
+        <Literal>A moral behavior is one that is motivated by an explicit recognition of the prescriptive force of moral rules (Narvaez &amp; Lapsley, 2005) or A moral behaviour is an acceptable way of life in a given society. This acceptable way of life or code of conduct is informed by religious beliefs, cultural beliefs, social beliefs, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000009</IRI>
+        <Literal>May need to separate behaviour that is new to the individual from behaviour that is completely new (although perhaps the latter is so uncommon, that the property means new to the individual?)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000009</IRI>
+        <Literal>is new</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000009</IRI>
+        <Literal>Having no previous example or precedent or parallel; of a kind not seen before. (Source: National Cancer Institute. New. NCI Thesaurus. Code C25586.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000010</IRI>
+        <Literal>&quot;But there is a definition for behavioural opportunity &quot;An environmental disposition that enables or facilitates a behaviour.&quot; This definition was imported from the Behaviour Change Intervention Ontology (see https://bciovocab.org/). Comments and suggestions for improvements are welcome using the Qeios review system.&quot; (Harriet Baird on 4th April 2023)
+
+&quot;Perhaps we could draw on the distinction between intentions and willingness here - e.g., opportuniistic behaviour &quot;is not intended, but rather results from a behavioural opportunity, defined as &quot;an environmental disposition that enables of facilitates a behaviour&quot;?&quot; (ThomasW 15th April 2023)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000010</IRI>
+        <Literal>is opportunistic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000010</IRI>
+        <Literal>Behaviour that is not intended, but rather results from a behavioural opportunity (&quot;an environmental disposition that enables of facilitates a behaviour&quot;). This definition was imported from the Behaviour Change Intervention Ontology (see https://bciovocab.org/).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000011</IRI>
+        <Literal>is optional</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000011</IRI>
+        <Literal>Possible but not necessary; left to personal choice. (Source: National Cancer Institute. Optional. NCI Thesaurus. Code C25603.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000012</IRI>
+        <Literal>ThomasW</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000012</IRI>
+        <Literal>2023-10-30T13:53:58.369001Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000012</IRI>
+        <Literal xml:lang="en">Effort</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000012</IRI>
+        <Literal>Requires physical or mental energy; hard work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000013</IRI>
+        <Literal>ThomasW</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000013</IRI>
+        <Literal>2023-10-30T13:59:12.478398Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000013</IRI>
+        <Literal xml:lang="en">Changeable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000014</IRI>
+        <Literal>ThomasW</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000014</IRI>
+        <Literal>2023-10-30T14:00:33.283443Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000014</IRI>
+        <Literal xml:lang="en">Unintended</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000015</IRI>
+        <Literal>ThomasW</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000015</IRI>
+        <Literal>2023-10-30T14:02:24.279538Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000015</IRI>
+        <Literal xml:lang="en">Illegal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000015</IRI>
+        <Literal>The behaviour is not allowed by the law (edited from: https://dictionary.cambridge.org/dictionary/english/legality)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000016</IRI>
+        <Literal>ThomasW</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000016</IRI>
+        <Literal>2023-10-30T14:04:00.35628Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000016</IRI>
+        <Literal xml:lang="en">Outside</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000017</IRI>
+        <Literal>ThomasW</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000017</IRI>
+        <Literal>2023-10-30T14:04:06.998649Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000017</IRI>
+        <Literal xml:lang="en">Inside</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000018</IRI>
+        <Literal>ThomasW</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000018</IRI>
+        <Literal>2023-10-30T14:08:55.746298Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000018</IRI>
+        <Literal xml:lang="en">Involves</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000018</IRI>
+        <Literal>Performance of the behaviour involves (i.e., is rarely possible without a minimum level of) one or more of the following</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000019</IRI>
+        <Literal>ThomasW</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000019</IRI>
+        <Literal>2023-10-30T14:25:21.698913Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000019</IRI>
+        <Literal xml:lang="en">largeCorrelation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000019</IRI>
+        <Literal>r = 0.50 (Cohen, 1992)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000020</IRI>
+        <Literal>ThomasW</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000020</IRI>
+        <Literal>2023-10-30T14:25:31.013765Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000020</IRI>
+        <Literal xml:lang="en">mediumCorrelation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000020</IRI>
+        <Literal>r = 0.30 (Cohen, 1992)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000021</IRI>
+        <Literal>ThomasW</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000021</IRI>
+        <Literal>2023-10-30T14:25:42.293692Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000021</IRI>
+        <Literal xml:lang="en">smallCorrelation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000021</IRI>
+        <Literal>r = 0.10 (Cohen, 1992)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000085</IRI>
+        <Literal>occurs before</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000086</IRI>
+        <Literal>occurs after</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000089</IRI>
+        <Literal>composed of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000092</IRI>
+        <Literal>facilitated by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000094</IRI>
+        <Literal>has effectiveness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000096</IRI>
+        <Literal>has goal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000097</IRI>
+        <Literal>has impact</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000098</IRI>
+        <Literal>has intention</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000099</IRI>
+        <Literal>has legality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000103</IRI>
+        <Literal>has type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000105</IRI>
+        <Literal>Goal-directed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000105</IRI>
+        <Literal>Goal = &quot;Internal representations of desired states, where states are broadly construed as outcomes, events, or processes.&quot; (Austin &amp; Vancouver 1996, p. 338)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000105</IRI>
+        <Literal>Goal = A cognitive representation of an end state towards which one is striving.
+(BCIO - https://www.bciovocab.org/BCIO:006049) Qeios (https://www.qeios.com/read/6M8C05)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000105</IRI>
+        <Literal>Goal = The end state toward which a human is striving: the purpose of an activity or endeavor. (edited from: https://dictionary.apa.org/goal)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000107</IRI>
+        <Literal>Facilitated by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000107</IRI>
+        <Literal>A factor that facilitates or supports performance of a behaviour</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000107</IRI>
+        <Literal>Something that facilities or supports progress or the achievement of an ultimate objective or end.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000108</IRI>
+        <Literal>is reflective of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000110</IRI>
+        <Literal>Intended</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000110</IRI>
+        <Literal>A mental disposition to commit to enact or not enact a behaviour.
+(BCIO - https://www.bciovocab.org/BCIO:006016) Qeios (https://www.qeios.com/read/5FTW17)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000110</IRI>
+        <Literal>A prior conscious decision to perform a behavior. (https://dictionary.apa.org/intention)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000110</IRI>
+        <Literal>Behavioural intentions are assumed to capture the motivational factors that influence a behaviour” and to indicate “how hard people are willing to try, or how much effort they would exert to perform a behaviour” (Ajzen, 1991, p. 181)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000111</IRI>
+        <Literal>measured by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000112</IRI>
+        <Literal>Impact</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000112</IRI>
+        <Literal>The effect of the behaviour on someone or something.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000117</IRI>
+        <Literal>motivated by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000118</IRI>
+        <Literal>occurs in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000119</IRI>
+        <Literal>occurs within</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000120</IRI>
+        <Literal>Barriers to</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000120</IRI>
+        <Literal>A factor that hinders or obstructs performance of a behaviour</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000120</IRI>
+        <Literal>Barrier: Something that restricts, impedes, or blocks progress or the achievement of an ultimate objective or end. (https://dictionary.apa.org/barrier)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000121</IRI>
+        <Literal>Legal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000121</IRI>
+        <Literal>The behaviour is allowed by the law (edited from: https://dictionary.cambridge.org/dictionary/english/legality)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000124</IRI>
+        <Literal>Motivation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000124</IRI>
+        <Literal>A mental process that energises and directs behaviour.
+(BCIO - https://www.bciovocab.org/BCIO:006133) Qeios (https://www.qeios.com/read/U92HTU)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000124</IRI>
+        <Literal>The impetus that gives purpose or direction to behavior and operates in humans at a conscious or unconscious level. (https://dictionary.apa.org/motivation)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000125</IRI>
+        <Literal>Context</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000125</IRI>
+        <Literal>The conditions or circumstances in which a particular behaviour occurs (edited from https://dictionary.apa.org/context)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000125</IRI>
+        <Literal>The time, place or setting in which a behaviour takes place.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000126</IRI>
+        <Literal>Consistent with actors identity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000126</IRI>
+        <Literal>A cognitive representation of themselves by a person or group.
+(BCIO - https://www.bciovocab.org/ADDICTO:0000381)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000126</IRI>
+        <Literal>An individual’s sense of self defined by (a) a set of physical, psychological, and interpersonal characteristics that is not wholly shared with any other person and (b) a range of affiliations (e.g., ethnicity) and social roles. Identity involves a sense of continuity, or the feeling that one is the same person today that one was yesterday or last year (despite physical or other changes). (https://dictionary.apa.org/identity)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000128</IRI>
+        <Literal>requires skill</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000129</IRI>
+        <Literal>restricted by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000130</IRI>
+        <Literal>to achieve</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000136</IRI>
+        <Literal>Autonomous</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000136</IRI>
+        <Literal>Autonomous motivation is defined as engaging in a behaviour because it is perceived to be consistent with intrinsic goals or outcomes and emanates from the self (Hagger et al., 2014)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000136</IRI>
+        <Literal>Motivation that is internally generated and based on a behaviour being interesting or valuable to an individual.
+(BCIO - https://www.bciovocab.org/BCIO:006302) (Qeios - https://www.qeios.com/read/OOD0Z2)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000137</IRI>
+        <Literal>Intrinsic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000137</IRI>
+        <Literal>Autonomous motivation due to a behaviour&apos;s inherent enjoyment, satisfaction or benefits to oneself.
+(BCIO - https://www.bciovocab.org/BCIO:006136) (Qeios - https://www.qeios.com/read/DBZBQF)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000137</IRI>
+        <Literal>Intrinsic motivation is defined as the doing of an activity for its inherent satisfaction rather than for some separable consequence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000138</IRI>
+        <Literal>Controlled</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000138</IRI>
+        <Literal>Engaging in behaviours for externally referenced reasons such as to gain rewards or perceived approval from others or to avoid punishment or feelings of guilt (Hagger et al., 2014)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000138</IRI>
+        <Literal>Motivation from outside the phenomenal self, by forces experienced as alien or pressuring, be they inner impulses or demands, or external contingencies of reward and punishment (Deci &amp; Ryan, 2006). Self-determination theory (Ryan &amp; Deci, 2000) defines controlled motivation as the opposite of autonomous motivation and so controlled motivation is also referred to as heteronomous.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://purl.org/turbbo/RBBO_0000150"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000138</IRI>
+        <Literal>Extrinsic Motivation (BCIO)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000143</IRI>
+        <Literal>Effectiveness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000143</IRI>
+        <Literal>The degree of success of a behaviour in achieving its goals. (edited from:https://dictionary.apa.org/effectiveness-evaluation)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000144</IRI>
+        <Literal>Revise when Middle ontology is ready</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000144</IRI>
+        <Literal>Nature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000145</IRI>
+        <Literal>Physical</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000145</IRI>
+        <Literal>A behavioural capability that involves a musculoskeletal process in its realisation.
+(BCIO - https://www.bciovocab.org/BCIO:006009) (Qeios - https://www.qeios.com/read/OAKHLF)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000146</IRI>
+        <Literal>Psychological</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000148</IRI>
+        <Literal>Skill</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000148</IRI>
+        <Literal>An ability or proficiency acquired through training and practice. (https://dictionary.apa.org/skill)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000301</IRI>
+        <Literal>Maybe we need separate properties or &quot;Is abnormal for the individual&quot; and &quot;is abnormal for society&quot;? There is another definition of Qeios of abnormal which states &quot;Deviating in any way from the state, position, structure, condition, behavior, or rule which is considered a norm.&quot; (National Cancer Institute. Abnormal. NCI Thesaurus. Code C25401)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000301</IRI>
+        <Literal>is abnormal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000301</IRI>
+        <Literal>Conduct that is unusual for the individual. (Source: National Cancer Institute. Abnormal Behavior. NCI Thesaurus. Code C122430, via Qeios)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000302</IRI>
+        <Literal xml:lang="en">Extrinsic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000302</IRI>
+        <Literal>Extrinsic motivation is defined as a motivation to participate in an activity based on meeting an external goal, garnering praise and approval, winning a competition, or receiving an award or payment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000302</IRI>
+        <Literal>Motivation that is based on external rewards, punishments or pressure regarding a behaviour.
+(BCIO - https://www.bciovocab.org/BCIO:006307) Synonyms: Controlled Motivation (Qeios - https://www.qeios.com/read/KHN5CN)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000303</IRI>
+        <Literal xml:lang="en">is adaptive</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000303</IRI>
+        <Literal>Adaptive behaviors are learned behaviors that reflect an individual&apos;s social and practical competence to meet the demands of everyday living (American Association on Intellectual and Developmental Disabilities)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000304</IRI>
+        <Literal xml:lang="en">is automatic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000305</IRI>
+        <Literal xml:lang="en">is consistent with self-identity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000305</IRI>
+        <Literal>Behaviour that expresses the person&apos;s identity (where self-identity is defined as &quot;An identity that a person has about themselves&quot; from the Addiction Ontology, Qeios ID: FDB3BI.2)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000306</IRI>
+        <Literal>Challenge here is whose definition of desirable? And at the time of the behaviour or later?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000306</IRI>
+        <Literal xml:lang="en">is desirable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000306</IRI>
+        <Literal>An evaluative belief about the value of the consequences of behaviour (Source: This definition was imported from the Behaviour Change Intervention Ontology (see https://bciovocab.org/), via Qeois - edited slightly).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000307</IRI>
+        <Literal xml:lang="en">is impulsive</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000307</IRI>
+        <Literal>Initiation of actions without forethought as to the cost, results or consequences. (Source: National Cancer Institute. Impulsive Behavior. NCI Thesaurus. Code C93213.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000308</IRI>
+        <Literal xml:lang="en">is intentional</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000308</IRI>
+        <Literal>Intentional behavior is a goal-directed activity whereby perceptions are sought and actions performed in service of the needs of the organism (Harter &amp; Kozma, 2021)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000309</IRI>
+        <Literal xml:lang="en">is learned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000309</IRI>
+        <Literal>A mental disposition to behave in a particular way in response to an internal or external event in the person&apos;s environment, which is acquired through habit learning. (Source:This definition was imported from the Behaviour Change Intervention Ontology (see https://bciovocab.org/). Comments and suggestions for improvements are welcome using the Qeios review system, via Qeios)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000310</IRI>
+        <Literal xml:lang="en">is normative</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000310</IRI>
+        <Literal>An individual human behaviour that is commonly enacted by people that are part of a social environmental system. This definition was imported from the Behaviour Change Intervention Ontology (see https://bciovocab.org/). Qeios ID: VYZF1Y</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000311</IRI>
+        <Literal xml:lang="en">is physical</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000311</IRI>
+        <Literal>A behaviour that involves a musculoskeletal process in its realisation. (Source: This definition was imported from the Behaviour Change Intervention Ontology (see https://bciovocab.org/). Comments and suggestions for improvements are welcome using the Qeios review system - slightly edited to remove &quot;capability&quot;)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000312</IRI>
+        <Literal xml:lang="en">is pleasurable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000312</IRI>
+        <Literal>Pleasure (an emotion associated with feeling good) that is experienced as a result of engaging in a behaviour. Overall this definition was reused from the Behaviour Change Intervention Ontology (see https://bciovocab.org/) and augmented with a definition of pleasure from National Cancer Institute. Pleasure. NCI Thesaurus. Code C86580.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000313</IRI>
+        <Literal xml:lang="en">is rational</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000313</IRI>
+        <Literal>Behaviour that is based on or in accordance with reason or logic.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000314</IRI>
+        <Literal xml:lang="en">is repetitive</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000315</IRI>
+        <Literal xml:lang="en">is spontaneous</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://purl.org/turbbo/RBBO_0000315</IRI>
+        <Literal>Behaviour that happens or arised without apparent external cause. Adapted from definition of spontaneous from the National Cancer Institute. Spontaneous. NCI Thesaurus. Code C48307.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi -->
+

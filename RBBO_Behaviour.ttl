@@ -1,0 +1,1083 @@
+@prefix : <https://purl.org/turbbo/RBBO_Behaviour.ttl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://purl.org/turbbo/RBBO_Behaviour.ttl> .
+
+<https://purl.org/turbbo/RBBO_Behaviour.ttl> rdf:type owl:Ontology ;
+                                              owl:versionIRI <https://purl.org/turbbo/2023-08-28/RBBO_Behaviour.ttl> ;
+                                              rdfs:comment "The RBBO_Behaviour module of RBBO provides a classification of different kinds of behaviours. This module of the ontology has reused and extended the 'individual human behaviour' class from BCIO_behavior ontology (http://humanbehaviourchange.org/ontology/bcio_behaviour.owl)." ;
+                                              rdfs:label "RBBO_Behaviour" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000078
+<http://purl.obolibrary.org/obo/IAO_0000078> rdf:type owl:AnnotationProperty ;
+                                             rdfs:label "curation status specification" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000112
+<http://purl.obolibrary.org/obo/IAO_0000112> rdf:type owl:AnnotationProperty ;
+                                             rdfs:label "example of usage" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+<http://purl.obolibrary.org/obo/IAO_0000115> rdf:type owl:AnnotationProperty ;
+                                             rdfs:label "definition" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000118
+<http://purl.obolibrary.org/obo/IAO_0000118> rdf:type owl:AnnotationProperty ;
+                                             rdfs:label "alternative label" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000232
+<http://purl.obolibrary.org/obo/IAO_0000232> rdf:type owl:AnnotationProperty ;
+                                             rdfs:label "curator note" .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036000
+<http://humanbehaviourchange.org/ontology/BCIO_036000> rdf:type owl:Class ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Also referred to in definitions as human behaviour or just behaviour." ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A bodily process of a human that involves co-ordinated contraction of striated muscles controlled by the brain." ,
+                                                                                                    "Individual human activity that involves co-ordinated contraction of striated muscles controlled by the brain." ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000118> "human behaviour" ;
+                                                       rdfs:comment " it is concerned with moving skeletal parts to which it is usually attached.'" ,
+                                                                    """Striated muscles referred to in the definition do not ordinarily involve cardiac muscles.
+
+Behaviours are usually in response to an internal or external stimuli.
+
+Every behaviour is associated with mental processes, but not every mental process is associated with behaviour. For instance, a verbal communication behaviour will involve mental processes to produce speech. However, mental processes associated with listening can occur without a person performing a behaviour.
+
+'behaviours' can involve a series of activities .
+
+'A 'striated muscle' can defined as 'a type of contractile tissue that is marked by transverse striations""" ;
+                                                       rdfs:label "individual human behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036002
+<http://humanbehaviourchange.org/ontology/BCIO_036002> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050323> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Pointing" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A non-linguistic communication behaviour using body language involving a deliberately chosen movement of the head, neck, torso, or limbs to express an idea or feeling." ;
+                                                       rdfs:comment "Gestures are deliberately chosen by the person to communicate some message.  The meaning of a gesture may differ across different cultures." ;
+                                                       rdfs:label "non-linguistic communication behaviour using gesture" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036005
+<http://humanbehaviourchange.org/ontology/BCIO_036005> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036007> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Storing, Littering, Installing, Assembling, Disassembling, Repairing, Designing, Servicing, Washing, Composting, Planting, Pruning,  Cooking,  Growing food, Recycling, Planting trees, Picking up litter" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An environmental system management behaviour that involves creating, maintaining, adapting or destroying non-sentient objects." ;
+                                                       rdfs:comment "Objects can include engineered artifacts, organisms, grain of sand and/or molecules. The phrase non-sentient objects is used to refer to objects that do not have a central nervous system." ;
+                                                       rdfs:label "object management behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036007
+<http://humanbehaviourchange.org/ontology/BCIO_036007> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Doing housework, Cleaning, Gardening, Farming, Harvesting" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An individual human behaviour that involves creating, maintaining, adapting or destroying aspects of the physical or social environment system." ;
+                                                       rdfs:comment "Environmental system is defined as \"A system which has the disposition to environ one or more material entities.\" . Accordingly, an environmental system is the social and physical environment surrounding a person." ;
+                                                       rdfs:label "environmental system management behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036008
+<http://humanbehaviourchange.org/ontology/BCIO_036008> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Studying, Active learning, Problem-based learning, Collaborative learning, Online learning" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An individual human behaviour that involves improving knowledge or skill." ;
+                                                       rdfs:label "learning behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036011
+<http://humanbehaviourchange.org/ontology/BCIO_036011> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Collaborating, coordinating gatherings" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An individual human behaviour that involves a person contributing to the functioning of a social structure or a person in relation to a social structure." ;
+                                                       rdfs:comment """In the definition, the term 'contributing' can refer 'joining or integrating into a group or improving or maintaining the functioning within a group'
+
+'social structure' can relate to a social network or group.""" ;
+                                                       rdfs:label "social organisation behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036014
+<http://humanbehaviourchange.org/ontology/BCIO_036014> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Intentional overdose" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An individual human behaviour that involves intentionally causing oneself physical harm." ;
+                                                       rdfs:comment "There can be different reasons for engaging in self-injury behaviours, including to deal with difficult feelings and memories." ;
+                                                       rdfs:label "self-injury behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036021
+<http://humanbehaviourchange.org/ontology/BCIO_036021> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Expressive dancing, Singing, Playing Music" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An individual human behaviour that involves consciously using some capability to create or shape an aspect of the environment to express an idea or emotion." ;
+                                                       rdfs:comment "An aspect of the environment includes both objects within it but also processes ." ;
+                                                       rdfs:label "creative expressive behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036024
+<http://humanbehaviourchange.org/ontology/BCIO_036024> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Nail-cutting" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An individual human behaviour that attends ones own hygiene, comfort or appearance." ;
+                                                       rdfs:comment "Behaviour relating to supporting the personal care of others can be captured under the class 'social support behaviour'." ;
+                                                       rdfs:label "personal bodily care behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036025
+<http://humanbehaviourchange.org/ontology/BCIO_036025> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An individual human behaviour that involves an interaction between two or more people." ;
+                                                       rdfs:label "inter-personal behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036026
+<http://humanbehaviourchange.org/ontology/BCIO_036026> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Walking, Crawling, Climbing" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An individual human behaviour in which muscles are used by a person to move themselves relative to the immediate environment or part of it." ;
+                                                       rdfs:label "locomotive behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036027
+<http://humanbehaviourchange.org/ontology/BCIO_036027> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Shooting, Writing, Using a weapon, Using public transport, Taking a bus, Sailing, Typing, Collecting, Drying, Ironing, Painting, Drawing" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An individual human behaviour that uses a non-sentient object." ;
+                                                       rdfs:comment "The phrase non-sentient objects is used to refer to entities that do not have a central nervous system." ;
+                                                       rdfs:label "object-using behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036028
+<http://humanbehaviourchange.org/ontology/BCIO_036028> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050318> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Pushing, Kicking, Punching" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A physical contact behaviour that is forceful." ;
+                                                       rdfs:label "physical impact behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036029
+<http://humanbehaviourchange.org/ontology/BCIO_036029> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An individual human behaviour that involves adopting a body configuration in relation to the immediate environment." ;
+                                                       rdfs:label "posture behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036030
+<http://humanbehaviourchange.org/ontology/BCIO_036030> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Copulating, Masturbating, Flirting, Having intercourse" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An individual human behaviour that involves sexual arousal." ;
+                                                       rdfs:comment "The classes 'reproductive behaviour' and 'sexual behaviour' have some instances in which they would overlap. For instance, a subclass of both of these classes would be 'reproductive sexual behaviour'. Examples for 'reproductive sexual behaviour' can be annotated by using the two classes: 'reproductive behaviour' and 'sexual behaviour'. There are also various examples in which the classes 'reproductive behaviour' does not overlap with sexual behaviour. For instance, fertility preservation would be a reproductive behaviour but not a sexual behaviour. Similarly, various sexual behaviours do not have a reproductive function. For instance, performing oral sex may not have a reproductive function." ;
+                                                       rdfs:label "sexual behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036032
+<http://humanbehaviourchange.org/ontology/BCIO_036032> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036037> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Cyberbullying" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A harassment behaviour that involves targeting someone through deliberate misuse of power in a relationship to inflict physical, social or psychological harm." ;
+                                                       rdfs:comment "While bullying behaviours can be directed at anyone, they are often aimed at certain people because of their race, religion, gender or sexual orientation or any other aspect such as appearance or disability ." ;
+                                                       rdfs:label "bullying behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036033
+<http://humanbehaviourchange.org/ontology/BCIO_036033> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050334> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Breast feeding, Nappy changing, Feeding, Nursing behaviour, Provide care" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A social support behaviour that involves meeting another persons physical, psychological or social needs that this person is unable to fully meet themselves at a given moment." ;
+                                                       rdfs:label "care-giving behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036034
+<http://humanbehaviourchange.org/ontology/BCIO_036034> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036025> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Calling out, Talking, Shouting, Teaching, Messaging, Lying, Exaggerating, Threatening, Greeting, Advising, Instructing, Conversing, Lobbying, Demonstrating, Training, Meeting, Posting on social media, Self-disclosing, Answering, Coaching, Giving a speech, Discussing, Story-telling, Writing an article, Advertising" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An inter-personal behaviour that involves the transmission of information." ;
+                                                       rdfs:label "human communication behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036035
+<http://humanbehaviourchange.org/ontology/BCIO_036035> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Spending, Purchasing, Selling, Investing, Renting, Gambling, Saving, Paying debts, Leasing" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An individual human behaviour that involves the production, acquisition, distribution or exchange of money, goods or services." ;
+                                                       rdfs:comment """behaviours', such as economic behaviour, can involve a series of activities .
+
+The term 'production' in the definition specifically refers to the 'production of goods and servies for value exchange'""" ;
+                                                       rdfs:label "economic behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036036
+<http://humanbehaviourchange.org/ontology/BCIO_036036> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036025> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Wrestling, fencing" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An inter-personal behaviour that involves taking part in a physical struggle involving contact or the use of weapons" ;
+                                                       rdfs:comment "Physical combat behaviour can be aggressive but does not need to be. For instance, people can fight as part of a game." ;
+                                                       rdfs:label "physical combat behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036037
+<http://humanbehaviourchange.org/ontology/BCIO_036037> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050335> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Stalking, Victimization, Sexual misconduct, Insults, Threats" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Harmful behaviour to others that entails intentionally targeting someone with a behaviour that has the effect of causing distress in the targeted person." ;
+                                                       rdfs:label "harassment behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036039
+<http://humanbehaviourchange.org/ontology/BCIO_036039> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036008> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Training, Behavioural practice/rehearsal" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A learning behaviour that involves improving the ability to perform physical, psychological or social activities." ;
+                                                       rdfs:label "skill development behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036041
+<http://humanbehaviourchange.org/ontology/BCIO_036041> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Yoga, Taichi" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An individual human behaviour that involves performing activities improve wellbeing by increasing the interconnectedness between mind and body." ;
+                                                       rdfs:label "mind-body behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036042
+<http://humanbehaviourchange.org/ontology/BCIO_036042> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Swimming, Engaging in regular physical activity, Exercising, Playing recreational sport" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An individual human behaviour that involves maintenance or improvement of flexibility, strength, balance or cardiovascular fitness." ;
+                                                       rdfs:label "physical performance behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036047
+<http://humanbehaviourchange.org/ontology/BCIO_036047> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Playing" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An individual human behaviour that is performed to experience pleasure or satisfaction." ;
+                                                       rdfs:label "enjoyment behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036054
+<http://humanbehaviourchange.org/ontology/BCIO_036054> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Urinating, Defecating, Induced vomiting" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An individual human behaviour that involves eliminating excess or harmful chemicals produced by bodily functions." ;
+                                                       rdfs:label "excretion behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036056
+<http://humanbehaviourchange.org/ontology/BCIO_036056> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Fertility preservation" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An individual human behaviour that involves producing offspring based on combining DNA of two or more people." ;
+                                                       rdfs:comment "The classes 'reproductive behaviour' and 'sexual behaviour' have some instances in which they would overlap. For instance, a subclass of both of these classes would be 'reproductive sexual behaviour'. Examples for 'reproductive sexual behaviour' can be annotated by using the two classes: 'reproductive behaviour' and 'sexual behaviour'. There are also various examples in which the classes 'reproductive behaviour' does not overlap with sexual behaviour. For instance, fertility preservation would be a reproductive behaviour but not a sexual behaviour. Similarly, various sexual behaviours do not have a reproductive function. For instance, performing oral sex may not have a reproductive function." ;
+                                                       rdfs:label "reproductive behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036057
+<http://humanbehaviourchange.org/ontology/BCIO_036057> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Inhaling, exhaling" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An individual human behaviour involves providing an appropriate level of oxygenation to body tissues." ;
+                                                       rdfs:label "breathing behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036059
+<http://humanbehaviourchange.org/ontology/BCIO_036059> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An individual human behaviour that involves changing physical location." ;
+                                                       rdfs:comment """Travel refers to some form of relocation from a place or position to another.
+
+The classes 'travel behaviour' and 'locomotive behaviour' have many instances in which they overlap. However, there are also examples where these classes are not the same. For instance, running on a treadmill is a locomotive behaviour but not a travel behaviour.""" ;
+                                                       rdfs:label "travel behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036061
+<http://humanbehaviourchange.org/ontology/BCIO_036061> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036027> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An object-using behaviour that involves ingesting material into the body." ;
+                                                       rdfs:label "consumption behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036062
+<http://humanbehaviourchange.org/ontology/BCIO_036062> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036027> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Building, Constructing, Food production, Production of goods" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An object-using behaviour that involves making a product from raw materials or parts." ;
+                                                       rdfs:label "manufacturing behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036063
+<http://humanbehaviourchange.org/ontology/BCIO_036063> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036027> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An object-using behaviour that involves deriving meaning from written or printed symbols." ;
+                                                       rdfs:label "reading behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036064
+<http://humanbehaviourchange.org/ontology/BCIO_036064> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036059> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A travel behaviour that involves moving an object in addition toother than the actor." ;
+                                                       rdfs:label "transporting behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036066
+<http://humanbehaviourchange.org/ontology/BCIO_036066> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Advocating, Recycling, Donating, Charitable giving, Charitable working, Volunteering, Participating in research, Co-operation, Altruism, Sharing food, Helping others" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An individual human behaviour that a population judges to accord with current norms of positive social conduct." ;
+                                                       rdfs:label "pro-social behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036067
+<http://humanbehaviourchange.org/ontology/BCIO_036067> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036029> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A posture behaviour that involves being in a horizontal position on a supporting surface" ;
+                                                       rdfs:label "lying down" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036068
+<http://humanbehaviourchange.org/ontology/BCIO_036068> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036029> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A posture behaviour in which one's weight is supported by one's buttocks and back rather than one's feet, and in which one's back rests on a surface at an angle that is greater than 90 degrees and less than 180 degrees." ;
+                                                       rdfs:label "reclining" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036069
+<http://humanbehaviourchange.org/ontology/BCIO_036069> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036029> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A posture behaviour in which one's weight is supported by one's buttocks rather than one's feet, and in which one's back is upright." ;
+                                                       rdfs:label "sitting" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036070
+<http://humanbehaviourchange.org/ontology/BCIO_036070> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036029> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A posture behaviour in which one has or is maintaining an upright position while supported by one's feet" ;
+                                                       rdfs:label "standing" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036072
+<http://humanbehaviourchange.org/ontology/BCIO_036072> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Swearing at work, Stealing, Mugging, Speeding, Truancy, Authority-challenging behaviour, Disruptive behaviour, Polluting, Scientific misconduct, Plagiarising at a university, Cheating" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An individual human behaviour that a population judges to be is contrary to the laws or accepted current norms of social conduct within a specific social context and causes annoyance and or disapproval in others." ;
+                                                       rdfs:label "antisocial behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036073
+<http://humanbehaviourchange.org/ontology/BCIO_036073> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An individual human behaviour that involves taking defensive action in order to avoid stimuli judged as adversive by the person." ;
+                                                       rdfs:label "avoidance behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036075
+<http://humanbehaviourchange.org/ontology/BCIO_036075> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Vandalism, Sabotaging, Polluting" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An individual human behaviour that involves damaging or destroying an aspect of an environmental system." ;
+                                                       rdfs:label "harmful behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036076
+<http://humanbehaviourchange.org/ontology/BCIO_036076> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A individual human behaviour that is enacted without giving an appropriate amount of thought to the consequences." ;
+                                                       rdfs:label "impulsive behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036084
+<http://humanbehaviourchange.org/ontology/BCIO_036084> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036011> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Engaging in community life, Engaging in civic involvement" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A social organisation behaviour that involves increasing a sense of being part of a social group or dyad." ;
+                                                       rdfs:label "affiliation behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036086
+<http://humanbehaviourchange.org/ontology/BCIO_036086> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Comforting, feeding, encouraging" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An individual human behaviour that involves meeting the physical, psychological or social needs of another animal to promote its development." ;
+                                                       rdfs:comment """The term 'animal' in the definition includes humans and other animals.
+
+There can be different dimensions of nurturing, e.g., in some cases, nurturing can involve addressing someone's physical needs  but not emotional needs.""" ;
+                                                       rdfs:label "nurture behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036089
+<http://humanbehaviourchange.org/ontology/BCIO_036089> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Voting, Supporting a political campaign, Engaging in political activism, Engaging in protest, Engaging in boycotts, Engaging in strikes, Political opposition, Campaigning to be elected" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An individual human behaviour that aims to bring about or oppose political or social change." ;
+                                                       rdfs:label "political behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036103
+<http://humanbehaviourchange.org/ontology/BCIO_036103> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036114> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A tobacco use behaviour that involves setting light to a combustible tobacco product and ingesting the tobacco smoke that is produced." ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000118> "smoking" ;
+                                                       rdfs:label "tobacco smoking behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036105
+<http://humanbehaviourchange.org/ontology/BCIO_036105> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036103> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A tobacco smoking behaviour that involves setting light to one end of a cigarette, putting the other end to the lips and sucking in order to ingest cigarette smoke." ;
+                                                       rdfs:label "cigarette smoking behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036108
+<http://humanbehaviourchange.org/ontology/BCIO_036108> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036026> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A locomotive behaviour that involves moving at a regular pace by lifting and setting down each foot in turn, never having both feet off the ground at once." ;
+                                                       rdfs:label "walking" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036110
+<http://humanbehaviourchange.org/ontology/BCIO_036110> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036035> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Hiring, Firing, Suspending, Promoting, Demoting, Contracting, Working at a job" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An economic behaviour that involves a paid work agreement between an employer and an employee." ;
+                                                       rdfs:comment "behaviours', such as employment behaviour, can involve a series of activities ." ;
+                                                       rdfs:label "employment behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036112
+<http://humanbehaviourchange.org/ontology/BCIO_036112> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Praying, participating in rituals, meditation practices for spiritual purposes, fasting for spiritual purposes, participating in a silent retreat" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An individual human behaviour that is performed in line with a belief system that is grounded in reverance for a supenatural power or powers and provides meaning in life." ;
+                                                       rdfs:label "spiritual behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036113
+<http://humanbehaviourchange.org/ontology/BCIO_036113> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036061> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A consumption behaviour that involves ingesting a psychoactive substance into the body." ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000118> "substance use" ;
+                                                       rdfs:comment "Substance use behaviour is not equated with substance abuse." ;
+                                                       rdfs:label "substance use behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_036114
+<http://humanbehaviourchange.org/ontology/BCIO_036114> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036113> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A substance use behaviour that involves ingesting constituents of a tobacco-containing product." ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000118> "tobacco use" ;
+                                                       rdfs:label "tobacco use behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050237
+<http://humanbehaviourchange.org/ontology/BCIO_050237> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036034> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A human communication behaviour in which the information that is communicated is encoded in language." ;
+                                                       rdfs:label "linguistic communication behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050238
+<http://humanbehaviourchange.org/ontology/BCIO_050238> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036034> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A human communication behaviour in which information is transmitted without being encoded in the meaning units of any language." ;
+                                                       rdfs:label "non-linguistic communication behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050291
+<http://humanbehaviourchange.org/ontology/BCIO_050291> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036008> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A learning behaviour that involves improving a person's knowledge." ;
+                                                       rdfs:label "knowledge development behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050317
+<http://humanbehaviourchange.org/ontology/BCIO_050317> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An individual human behaviour that involves avoiding, reducing or escaping anxiety, stress, sorrow, shame and unhappiness." ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000118> "distress minimization behaviour" ;
+                                                       rdfs:label "distress minimisation behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050318
+<http://humanbehaviourchange.org/ontology/BCIO_050318> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Touching" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An individual human behaviour that makes physical contact with something." ;
+                                                       rdfs:label "physical contact behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050319
+<http://humanbehaviourchange.org/ontology/BCIO_050319> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036027> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Watching a movie" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An object-using behaviour that involves deriving meaning from visual or audiovisual material." ;
+                                                       rdfs:label "watching behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050320
+<http://humanbehaviourchange.org/ontology/BCIO_050320> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036027> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An object-using  behaviour that involves attending to audiomaterial." ;
+                                                       rdfs:label "audio presentation listening behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050323
+<http://humanbehaviourchange.org/ontology/BCIO_050323> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050238> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A non-linguistic communication behaviour that involves expressing thoughts or feelings through bodily movement or posture." ;
+                                                       rdfs:label "non-linguistic communication behaviour using body language" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050324
+<http://humanbehaviourchange.org/ontology/BCIO_050324> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050323> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Non-linguistic communication behaviour using body language that involves movements of facial muscles to express thoughts or feelings." ;
+                                                       rdfs:label "non-linguistic communication behaviour using facial expression" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050325
+<http://humanbehaviourchange.org/ontology/BCIO_050325> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036027> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An object-using behaviour that involves interacting with programs, procedures, documentation or data on an electronic device." ;
+                                                       rdfs:label "digital interaction behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050326
+<http://humanbehaviourchange.org/ontology/BCIO_050326> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036061> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A consumption behaviour that involves putting a material into ones mouth and swallowing this material." ;
+                                                       rdfs:label "oral consumption" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050327
+<http://humanbehaviourchange.org/ontology/BCIO_050327> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050326> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Oral consumption behaviour that involves chewing and swallowing some solid components" ;
+                                                       rdfs:label "eating" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050328
+<http://humanbehaviourchange.org/ontology/BCIO_050328> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050326> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Oral consumption behaviour that involves swallowing a liquid material." ;
+                                                       rdfs:label "drinking" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050329
+<http://humanbehaviourchange.org/ontology/BCIO_050329> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036061> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A consumption behaviour that involves administering a liquid into ones body with a needle and a syringe." ;
+                                                       rdfs:comment "In the definition, a needle and a springe include both a standard needle and syringe but also an autoinjector." ;
+                                                       rdfs:label "self-injecting consumption" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050330
+<http://humanbehaviourchange.org/ontology/BCIO_050330> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050329> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Self-injecting consumption that involves administering liquids into ones veins." ;
+                                                       rdfs:label "intravenous self-injecting" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050331
+<http://humanbehaviourchange.org/ontology/BCIO_050331> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036061> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A consumption behaviour that involves breathing in a material through the nose or mouth." ;
+                                                       rdfs:label "inhaling consumption" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050332
+<http://humanbehaviourchange.org/ontology/BCIO_050332> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050331> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Inhaling consumption that involves breathing in a material through the nose." ;
+                                                       rdfs:label "sniffing consumption" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050333
+<http://humanbehaviourchange.org/ontology/BCIO_050333> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036061> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Nicotine patches, hormone patches, pain relief gels" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A consumption behaviour that involves applying a material to the skin and ingesting this material into the circulation through the skin." ;
+                                                       rdfs:label "transdermal consumption" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050334
+<http://humanbehaviourchange.org/ontology/BCIO_050334> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036025> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An inter-personal behaviour that involves providing physical, psychological or social assistance to another." ;
+                                                       rdfs:label "social support behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050335
+<http://humanbehaviourchange.org/ontology/BCIO_050335> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036075> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Mistreatment, Sexual assault, Engaging in domestic violence, Physical attack, Abuse behaviour" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A harmful behaviour that involves interacting with another animal  and thereby causing harm to its health, wellbeing or social functioning." ;
+                                                       rdfs:comment """The term 'animal' in the definition includes humans and other animals.
+
+Harmful behaviour to others will involve a direct interaction between the person performing the behaviour and the person or animal that is negatively affected.""" ;
+                                                       rdfs:label "harmful behaviour to others" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050336
+<http://humanbehaviourchange.org/ontology/BCIO_050336> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An individual human behaviour that involves interacting with a healthcare provider in order to assess, monitor, improve or maintain an aspect of one's health or wellbeing." ;
+                                                       rdfs:comment "A healthcare provider can be a person or organisation" ;
+                                                       rdfs:label "utilising healthcare" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050337
+<http://humanbehaviourchange.org/ontology/BCIO_050337> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050336> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Utilising healthcare that involves scheduling a time to interact with a person or organisation providing healthcare." ;
+                                                       rdfs:label "arranging a healthcare service appointment" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050338
+<http://humanbehaviourchange.org/ontology/BCIO_050338> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050336> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Blood test to check for anaemia, psychological testing" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Utilising healthcare that involves participating in a healthcare procedure to assess or monitor an aspect of ones health or wellbeing." ;
+                                                       rdfs:comment "Healthcare procedure is defined as a healthcare intervention that refers to any series of pre-defined steps that should be followed to achieve a desired result." ;
+                                                       rdfs:label "participating in healthcare testing" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050339
+<http://humanbehaviourchange.org/ontology/BCIO_050339> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050338> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Screen for breast cancer, screen for perinatal depression" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Participating in healthcare testing to detect the presence of a health condition while asymptomatic for that condition." ;
+                                                       rdfs:label "participating in health screening" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050340
+<http://humanbehaviourchange.org/ontology/BCIO_050340> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050336> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Utilising healthcare that involves interacting with a healthcare provider to receive a vaccination to prevent or lower the risk of a disease." ;
+                                                       rdfs:comment "Vaccination is defined as a medical intervention that involves in adding vaccine into a host  in vivo with the intent to invoke an adaptive immune response." ;
+                                                       rdfs:label "undergoing vaccination" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050341
+<http://humanbehaviourchange.org/ontology/BCIO_050341> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050336> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Undergoing surgery" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Utilising healthcare that involves interacting with a health professional to improve or maintain aspects of one's health or wellbeing." ;
+                                                       rdfs:label "participating in healthcare treatment" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050342
+<http://humanbehaviourchange.org/ontology/BCIO_050342> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050341> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Participating in healthcare treatment that involves advice, encouragement, or physical support to perform movements that remediate ones bodily impairments or promote mobility, function or quality of life." ;
+                                                       rdfs:label "participating in physical therapy" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050343
+<http://humanbehaviourchange.org/ontology/BCIO_050343> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050341> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Participating in healthcare treatment that uses communication or recommended tasks to assess and improve adaptive mental or behavioural functioning." ;
+                                                       rdfs:label "participating in psychological treatment" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050344
+<http://humanbehaviourchange.org/ontology/BCIO_050344> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050343> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Participating in psychological treatment that involves creative and expressive processes." ;
+                                                       rdfs:label "participating in creative arts therapy" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050345
+<http://humanbehaviourchange.org/ontology/BCIO_050345> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050341> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Participating in healthcare treatment that aims to enable people to participate in the activities of everyday life." ;
+                                                       rdfs:label "participating in occupational therapy" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050346
+<http://humanbehaviourchange.org/ontology/BCIO_050346> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050341> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Participating in healthcare treatment that aims to improve or restore communication, eating, drinking or swallowing." ;
+                                                       rdfs:label "participating in speech and language therapy" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050347
+<http://humanbehaviourchange.org/ontology/BCIO_050347> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An individual human behaviour that uses a method to monitor and record an indicator of ones health or wellbeing." ;
+                                                       rdfs:label "self-monitoring an aspect of health" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050348
+<http://humanbehaviourchange.org/ontology/BCIO_050348> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An individual human behaviour that involves protecting one's skin or eyes from the damaging effects of the sun." ;
+                                                       rdfs:comment "Sun protective behaviour is defined in terms of its goal  and can include very different behaviours, e.g., applying sunscreen and staying in the shade." ;
+                                                       rdfs:label "sun protective behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050349
+<http://humanbehaviourchange.org/ontology/BCIO_050349> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036061> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A consumption behaviour that involves ingesting a medicine to treat or relieve symptoms of a health condition or maintain an aspect of health or wellbeing." ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000118> "pharmacological consumption" ;
+                                                       rdfs:comment "Medicine is defined as type of drug, i.e., any substance which when absorbed into a living organism may modify one or more of its functions." ;
+                                                       rdfs:label "medication-taking" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050350
+<http://humanbehaviourchange.org/ontology/BCIO_050350> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An individual human behaviour that involves assessing, monitoring, improving or maintaining an aspect of another persons health or wellbeing." ;
+                                                       rdfs:label "providing healthcare" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050351
+<http://humanbehaviourchange.org/ontology/BCIO_050351> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050350> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Providing healthcare that involves assessing symptoms and signs in order to detect the nature of a health condition." ;
+                                                       rdfs:comment "Symptoms are experienced or felt by the individual , while signs are observed or detected by the healthcare professional . There can be overlap between symptoms and signs, as some symptoms can be observed or detected by a healthcare professional." ;
+                                                       rdfs:label "diagnostic healthcare behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050352
+<http://humanbehaviourchange.org/ontology/BCIO_050352> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050350> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Providing a healthcare that involves a procedure to assess another persons health or wellbeing." ;
+                                                       rdfs:label "providing healthcare testing" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050353
+<http://humanbehaviourchange.org/ontology/BCIO_050353> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050352> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Providing healthcare testing to detect the presence of a health condition in a person who is asymptomatic for that condition." ;
+                                                       rdfs:label "providing in health screening" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050354
+<http://humanbehaviourchange.org/ontology/BCIO_050354> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050350> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Providing healthcare that involves advising and authorising the use of a treatment to improve or maintain another person's health or wellbeing." ;
+                                                       rdfs:label "prescribing behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050355
+<http://humanbehaviourchange.org/ontology/BCIO_050355> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050354> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Prescribing behaviour that involves advising and authorising the use of a medicine." ;
+                                                       rdfs:comment """Medicine is defined as type of drug, i.e., any substance which when absorbed into a living organism may modify one or more of its functions. 
+
+Prescribing medication can include advising and authorising to stop using a medicine.""" ;
+                                                       rdfs:label "prescribing medication" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050356
+<http://humanbehaviourchange.org/ontology/BCIO_050356> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050354> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Prescribing behaviour that involves advising and authorising the performance of a behaviour or a series of behaviours." ;
+                                                       rdfs:label "prescribing behavioural regime" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050357
+<http://humanbehaviourchange.org/ontology/BCIO_050357> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050354> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Prescribing behaviour that involves advising and authorising the participation in services targeting social, economic or environmental factors that affect health or wellbeing." ;
+                                                       rdfs:label "social prescribing" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050358
+<http://humanbehaviourchange.org/ontology/BCIO_050358> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050350> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Providing healthcare that involves assessing a person's health or wellbeing after a period of taking a prescribed medication and assessing whether the medication continues to be appropriate." ;
+                                                       rdfs:label "reviewing prescribed medication" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050359
+<http://humanbehaviourchange.org/ontology/BCIO_050359> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050350> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Providing healthcare that involves administering a vaccination to prevent or lower the risk of a disease." ;
+                                                       rdfs:comment "Vaccination is defined as a medical intervention that involves adding a vaccine into a host  in vivo with the intent to invoke an adaptive immune response." ;
+                                                       rdfs:label "administering vaccine" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050360
+<http://humanbehaviourchange.org/ontology/BCIO_050360> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050350> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Providing healthcare that involves communicating guidance or recommendations to improve or maintain another persons health or wellbeing." ;
+                                                       rdfs:label "providing healthcare advice" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050361
+<http://humanbehaviourchange.org/ontology/BCIO_050361> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050350> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Providing healthcare that involves directing a person to another healthcare professional or organisation to assess, monitor, improve or maintain an aspect of this persons health or wellbeing." ;
+                                                       rdfs:label "making a referral to another health care service" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050362
+<http://humanbehaviourchange.org/ontology/BCIO_050362> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050350> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Providing healthcare that involves interacting with a person to improve or maintain aspects of this persons health or wellbeing." ;
+                                                       rdfs:label "providing healthcare treatment" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050363
+<http://humanbehaviourchange.org/ontology/BCIO_050363> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050362> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Providing healthcare treatment that involves advising, encouraging or physically supporting, a person to perform movements that remediate this persons bodily impairments or promote mobility, function or quality of life." ;
+                                                       rdfs:label "providing physical therapy" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050364
+<http://humanbehaviourchange.org/ontology/BCIO_050364> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050362> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Providing healthcare treatment that uses communication or recommended tasks to assess and improve a persons adaptive mental or behavioural functioning." ;
+                                                       rdfs:label "providing psychological treatment" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050365
+<http://humanbehaviourchange.org/ontology/BCIO_050365> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050364> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Providing psychological treatment that involves creative and expressive processes." ;
+                                                       rdfs:label "providing creative arts therapy" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050366
+<http://humanbehaviourchange.org/ontology/BCIO_050366> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050362> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Providing healthcare treatment that aims to enable people to participate in the activities of everyday life." ;
+                                                       rdfs:label "providing occupational therapy" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050367
+<http://humanbehaviourchange.org/ontology/BCIO_050367> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050362> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Providing healthcare treatment that aims to improve or restore communication, eating, drinking or swallowing." ;
+                                                       rdfs:label "providing speech and language therapy" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050368
+<http://humanbehaviourchange.org/ontology/BCIO_050368> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036024> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Showering, bathing, makeup removing" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A personal bodily care behaviour that attends to hygiene by cleaning or washing oneself or parts of the body." ;
+                                                       rdfs:label "bodily hygiene behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050369
+<http://humanbehaviourchange.org/ontology/BCIO_050369> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050368> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A bodily hygiene behaviour that involves cleaning or washing one's hands." ;
+                                                       rdfs:label "handwashing" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050370
+<http://humanbehaviourchange.org/ontology/BCIO_050370> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050368> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Tooth-brushing, flossing, using mouthwash" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A bodily hygiene behaviou that attends to oral heath by cleaning one's teeth, gums or tongue." ;
+                                                       rdfs:label "dental hygiene behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050371
+<http://humanbehaviourchange.org/ontology/BCIO_050371> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036024> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A personal bodily care behaviour that involves wearing clothes providing comfort and protecting oneself from ambient conditions." ;
+                                                       rdfs:label "dressing behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050372
+<http://humanbehaviourchange.org/ontology/BCIO_050372> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036024> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000112> "Hair-arranging, Make-up applying" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A personal bodily care behaviour that attends to making changes to one's body to achieve a desired appearance." ;
+                                                       rdfs:label "appearance-based bodily behaviour" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050373
+<http://humanbehaviourchange.org/ontology/BCIO_050373> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050238> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A non-linguistic communication behaviour using one's voice to produce sounds." ;
+                                                       rdfs:label "non-linguistic communication behaviour using vocalisations" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050374
+<http://humanbehaviourchange.org/ontology/BCIO_050374> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036000> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "An individual human behaviour showing an emotion such as mirth, joy, or scorn with a chuckle or explosive vocal sound." ;
+                                                       rdfs:label "laughing" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050375
+<http://humanbehaviourchange.org/ontology/BCIO_050375> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050323> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A non-linguistic communication behaviour using body language characterised by the meeting of eyes with another individual." ;
+                                                       rdfs:label "non-linguistic communication behaviour using eye contact" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050376
+<http://humanbehaviourchange.org/ontology/BCIO_050376> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_036113> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "A substance use behaviour that involves drinking an alcohol-containing product." ;
+                                                       rdfs:label "alcohol consumption" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050377
+<http://humanbehaviourchange.org/ontology/BCIO_050377> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050378> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Inhaling consumption that that involves using an e-cigarette." ;
+                                                       rdfs:label "e-cigarette use" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050378
+<http://humanbehaviourchange.org/ontology/BCIO_050378> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050379> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Inhaling consumption that involves the use of an electronic vaping device." ;
+                                                       rdfs:label "electronic vaping device use" .
+
+
+###  http://humanbehaviourchange.org/ontology/BCIO_050379
+<http://humanbehaviourchange.org/ontology/BCIO_050379> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://humanbehaviourchange.org/ontology/BCIO_050331> ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000078> "Published" ;
+                                                       <http://purl.obolibrary.org/obo/IAO_0000115> "Inhaling consumption that involves using a device to consume an aerosol." ;
+                                                       rdfs:label "vaping device use" .
+
+
+###  Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi
